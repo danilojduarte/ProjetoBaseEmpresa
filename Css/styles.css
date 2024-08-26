@@ -215,6 +215,15 @@ img {
 
 
 /*=============== HOME ===============*/
+.home {
+  position: relative;
+  background-color: var(--black-color);
+}
+.home-container {
+  position: relative;
+  row-gap: 3rem;
+  padding-block: 2.5rem;
+}
 
 
 /*=============== BUTTON ===============*/
