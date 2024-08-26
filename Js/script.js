@@ -20,7 +20,13 @@ const navMenu = document.getElementById('nav__menu'),
 
 
 /*=============== REMOVE MENU MOBILE ===============*/
+const navLink = document.querySelectorAll('.nav-link')
 
+constlinkAction = () => {
+  const Menu = document.getElementById('nav__menu')
+  navMenu.classList.remove('show-menu')
+}
+navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 
