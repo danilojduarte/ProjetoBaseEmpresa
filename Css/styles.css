@@ -239,7 +239,46 @@ img {
   box-shadow: 0 8px 32px hsl(18, 95%, 55%, .3);
   color: var(--white-color);
 }
-
+.home-content {
+  row-gap: 2.5rem;
+}
+.home-data {
+  text-align: center;
+}
+.home-title {
+  color: var(--white-color);
+  font-size: var(--big-font-size);
+  font-weight: var(--font-bold);
+  margin-bottom: 1rem;
+}
+.home-description {
+  margin-bottom: 2.5rem;
+  color: var(--text-color-light);
+}
+.home-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.button-link {
+  display: flex;
+  align-items: center;
+  column-gap: .25rem;
+  color: var(--first-color);
+}
+.button-link span {
+  font-weight: var(--font-semi-bold);
+}
+.button-link i {
+  font-size: 1.5rem;
+  transition: transform .4s;
+}
+/* ==== RESOLVER BUG BUTTON NÃO ESTA RECEBENDO O HOVER - 18:49 */
+.button-link i:hover {
+  transform: translateX(.25rem);
+  color: white;
+}
 
 /*=============== ABOUT ===============*/
 
