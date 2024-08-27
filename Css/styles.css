@@ -224,6 +224,11 @@ img {
   row-gap: 3rem;
   padding-block: 2.5rem;
 }
+.home-info {
+  display: flex;
+  justify-content: center;
+  column-gap: 4.5rem;
+}
 
 
 /*=============== BUTTON ===============*/
@@ -272,12 +277,12 @@ img {
 }
 .button-link i {
   font-size: 1.5rem;
-  transition: transform .4s;
+  transition: all .4s ease ;
+  cursor: pointer;
 }
 /* ==== RESOLVER BUG BUTTON NÃO ESTA RECEBENDO O HOVER - 18:49 */
-.button-link i:hover {
+.button-link:hover i {
   transform: translateX(.25rem);
-  color: white;
 }
 
 /*=============== ABOUT ===============*/

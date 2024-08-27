@@ -22,7 +22,7 @@ const navMenu = document.getElementById('nav__menu'),
 /*=============== REMOVE MENU MOBILE ===============*/
 const navLink = document.querySelectorAll('.nav-link')
 
-constlinkAction = () => {
+const linkAction = () => {
   const Menu = document.getElementById('nav__menu')
   navMenu.classList.remove('show-menu')
 }
