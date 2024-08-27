@@ -229,6 +229,16 @@ img {
   justify-content: center;
   column-gap: 4.5rem;
 }
+.home-info-title {
+  color: var(--second-color);
+  font-size: var(--big-font-size);
+  font-weight: var(--font-bold);
+  margin-bottom: .5rem;
+}
+.home-info-title-description {
+  font-size: var(--small-font-size);
+  color: var(--white-color);
+}
 
 
 /*=============== BUTTON ===============*/
