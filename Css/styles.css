@@ -373,12 +373,15 @@ img {
 
 
 /*=============== SERVICES ===============*/
-.section__title h2 {
+.services-text {
+  text-align: center;
+}
+/* .section__title h2 {
   text-align: center;
 } 
 .section__subtitle span {
   text-align: center;
-}
+} */
 
 
 /* Swiper class */
