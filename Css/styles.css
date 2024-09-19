@@ -7,20 +7,20 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(18, 95%, 55%);
-  --second-color: hsl(42, 98%, 52%);
+  --first-color: #f9611f;
+  --second-color: #fdb50d;
   --first-gradient: linear-gradient(90deg,
-                  hsl(18, 95%, 55%),
-                  hsl(18, 98%, 64%));
-  --title-color: hsl(255, 12%, 12%);
+                  #f9611f,
+                  #fd7f49);
+  --title-color: rgb(29, 27, 34);
   --text-color: hsl(225, 12%, 24%);
-  --text-color-light: hsl(255, 4%, 70%);
+  --text-color-light: #b1afb6;
   --body-color: hsl(0, 0%, 100%);
-  --container-color: hsl(0, 0%, 100%);
-  --white-color: hsl(0, 0%, 100%);
-  --black-color: hsl(255, 20%, 10%);
-  --gray-border: hsl(255, 6%, 90%);
-  --black-border: hsl(255, 10%, 20%);
+  --container-color: #ffffff;
+  --white-color: #ffffff;
+  --black-color: #17141f;
+  --gray-border: #e5e4e7;
+  --black-border: #302e38;
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -55,47 +55,14 @@
   }
 }
 
-/*=============== BASE ===============*/
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  background-color: var(--body-color);
-  color: var(--text-color);
-}
-
-h1, h2, h3, h4 {
-  color: var(--title-color);
-  font-weight: var(--font-semi-bold);
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
 
 /*=============== REUSABLE CSS CLASSES ===============*/
-.container {
-  max-width: 1120px;
-  margin-inline: 1.5rem;
+section {
+  padding: 80px 18%;
+}
+
+span {
+  color: var(--first-color);
 }
 
 .grid {
@@ -103,16 +70,17 @@ img {
   gap: 1.5rem;
 }
 
-.section {
-  padding-block: 5rem 1rem;
-}
-.section__title, 
+
+/* Class para estilos do texto */
+/* .section__title, 
 .section__subtitle {
   text-align: center;
-}
+} */
 
+
+/* Estilo do title */
 .section__title {
-  font-size: var(--h1-font-size);
+  font-size: var(--h2-font-size);
   font-weight: var(--font-bold);
   margin-bottom: 1.5rem;
 }
@@ -125,8 +93,40 @@ img {
   margin-bottom: .5rem;
 }
 
-.main {
-  overflow: hidden;
-}
+
 
 /*=============== HEADER & NAV ===============*/
+/* Inciando sessão header */
+
+header {
+  position: fixed;
+  width: 100%;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 25px 15%;
+  z-index: 1000;
+  transition: all .35s ease;
+}
+.logo {
+  font-size: var(--h3-font-size);
+  color: var(--black-color);
+  font-weight: var(--font-bold);
+}
+.navbar {
+  display: flex;
+  align-items: center;
+}
+.navbar a {
+  font-size: var(--p-font);
+  color: var(--text-color);
+  padding: 10px 28px;
+  font-weight: 700;
+  transition: all .35s ease;
+}
+.navbar a:hover {
+  color: var(--first-color);
+}
