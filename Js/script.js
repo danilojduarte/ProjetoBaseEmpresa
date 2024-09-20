@@ -1,50 +1,18 @@
-/*=============== SHOW MENU ===============*/
-const navMenu = document.getElementById('nav__menu'),
-      navToggle = document.getElementById('nav__toggle'),
-      navClose = document.getElementById('nav__close')
+const header = document.querySelector("header");
 
-      // Menu Show
-      if(navToggle){
-        navToggle.addEventListener('click', () => {
-          navMenu.classList.add('show-menu')
-        })
-      }
+window.addEventListener ("scroll", function() {
+    header.classList.toggle ("sticky", window.scrollY > 0);
+});
 
-      // Menu Hidden
+let menu = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
 
-      if(navClose) {
-        navClose.addEventListener('click', () => {
-          navMenu.classList.remove('show-menu')
-        })
-      }
+menu.onclick = () => {
+    menu.classList.toggle('bx-x');
+    navbar.classList.toggle('open');
+};
 
-
-/*=============== REMOVE MENU MOBILE ===============*/
-const navLink = document.querySelectorAll('.nav-link')
-
-const linkAction = () => {
-  const Menu = document.getElementById('nav__menu')
-  navMenu.classList.remove('show-menu')
-}
-navLink.forEach(n => n.addEventListener('click', linkAction))
-
-/*=============== CHANGE BACKGROUND HEADER ===============*/
-const bgHeader = () => {
-  const header = document.getElementById('header')
-  // Add a class se o bottom offset maior que 50
-  this.scrollY >= 50 ? header.classList.add('bg-header')
-                     : header.classList.remove('bg-header')
-}
-window.addEventListener('scroll', bgHeader)
-bgHeader()
-
-/*=============== SWIPER SERVICES ===============*/ 
-
-
-/*=============== SHOW SCROLL UP ===============*/ 
-
-
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-
-
-/*=============== SCROLL REVEAL ANIMATION ===============*/
+window.onscroll = () => {
+    menu.classList.remove('bx-x');
+    navbar.classList.remove('open');
+};
